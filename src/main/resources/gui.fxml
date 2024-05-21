@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ul.miage.ncm.verre.Controller">
+   <top>
+      <Label text="Démo Verre + Matcha 🍵" BorderPane.alignment="CENTER" />
+   </top>
+   <bottom>
+      <Button fx:id="demarrer" mnemonicParsing="false" onAction="#action_demarrer" text="Démarrer" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="280.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle fx:id="verre" arcHeight="5.0" arcWidth="5.0" fill="#8ba888" height="365.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Separator orientation="VERTICAL" prefHeight="365.0" prefWidth="44.0" />
+            <TextArea fx:id="message" prefHeight="336.0" prefWidth="357.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" top="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </center>
+</BorderPane>
